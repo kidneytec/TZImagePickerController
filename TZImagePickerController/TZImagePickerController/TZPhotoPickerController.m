@@ -20,7 +20,6 @@
 #import "TZImageRequestOperation.h"
 
 @interface TZPhotoPickerController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAlertViewDelegate> {
-    NSMutableArray *_models;
     
     UIView *_bottomToolBar;
     UIButton *_previewButton;
@@ -42,7 +41,6 @@
 @property (nonatomic, strong) UILabel *noDataLabel;
 @property (strong, nonatomic) UICollectionViewFlowLayout *layout;
 @property (nonatomic, strong) UIImagePickerController *imagePickerVc;
-@property (strong, nonatomic) CLLocation *location;
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @end
 

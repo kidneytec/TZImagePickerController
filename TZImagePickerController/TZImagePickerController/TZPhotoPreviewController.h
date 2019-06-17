@@ -16,6 +16,13 @@
 @property (nonatomic, assign) BOOL isSelectOriginalPhoto;       ///< If YES,return original photo / 是否返回原图
 @property (nonatomic, assign) BOOL isCropImage;
 
+/*
+ 为了支持编辑操作
+ */
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSArray *photosTemp;
+@property (nonatomic, strong) NSArray *assetsTemp;
+
 /// Return the new selected photos / 返回最新的选中图片数组
 @property (nonatomic, copy) void (^backButtonClickBlock)(BOOL isSelectOriginalPhoto);
 @property (nonatomic, copy) void (^doneButtonClickBlock)(BOOL isSelectOriginalPhoto);

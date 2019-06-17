@@ -15,10 +15,7 @@
 #import "TZImageCropManager.h"
 
 @interface TZPhotoPreviewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate> {
-    UICollectionView *_collectionView;
     UICollectionViewFlowLayout *_layout;
-    NSArray *_photosTemp;
-    NSArray *_assetsTemp;
     
     UIView *_naviBar;
     UIButton *_backButton;
