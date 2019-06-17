@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@class TZAlbumModel;
+@class TZAlbumModel, TZCollectionView;
 @interface TZPhotoPickerController : UIViewController
 
 @property (nonatomic, assign) BOOL isFirstAppear;
@@ -17,6 +17,7 @@
 @property (nonatomic, strong) TZAlbumModel *model;
 @property (strong, nonatomic) CLLocation *location;
 @property (nonatomic, strong) NSMutableArray *models;
+@property (nonatomic, strong, readonly) TZCollectionView *collectionView;
 
 - (void)refreshBottomToolBarStatus;
     
